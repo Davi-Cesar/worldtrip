@@ -2,11 +2,7 @@ import React from "react";
 import { Box, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { Header } from "../components/Header/Header";
 import { Travel } from "../components/Travel/Travel";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 
-import "swiper/css";
-import "swiper/css/pagination";
 import SwiperComponent from "../components/Swiper/SwiperComponent";
 
 export default function Home() {

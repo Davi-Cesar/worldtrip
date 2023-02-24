@@ -4,7 +4,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Box, color, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import Continent from "./Continent";
 
 export default function SwiperComponent() {
   return (
@@ -20,100 +21,39 @@ export default function SwiperComponent() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Flex
-            direction="column"
-            h="100%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Box
-              h="100%"
-              w="100%"
-              bgImage="url('/Europa.jfif')"
-              bgPosition="center"
-              bgRepeat="no-repeat"
-              filter="auto"
-              brightness="80%"
-              // filter={grayscale(8)}
-            />
-            <Box
-              position="absolute"
-              width="100%"
-              height="100px"
-              top="0"
-              bottom="0"
-              left="0"
-              right="0"
-              margin="auto"
-            >
-              <Text fontWeight="bold" fontSize="40">
-                Europa
-              </Text>
-              <Text fontWeight="bold" fontSize="24">
-                O continente mais antigo.
-              </Text>
-            </Box>
-          </Flex>
+          <Continent
+            name="Europa"
+            description="O continente mais antigo."
+            image="./Europa.jfif"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Flex
-            direction="column"
-            h="100%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Text fontWeight="bold" fontSize="40">
-              América
-            </Text>
-            <Text fontWeight="bold" fontSize="24">
-              O continente mais antigo.
-            </Text>
-          </Flex>
+          <Continent
+            name="América"
+            description="É o segundo maior e mais comprido do mundo."
+            image="https://www.dicasdeviagem.com/wp-content/uploads/2022/04/gugelmim-rio-de-janeiro-por-do-sol-pixabay.jpg"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Flex
-            direction="column"
-            h="100%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Text fontWeight="bold" fontSize="40">
-              Ásia
-            </Text>
-            <Text fontWeight="bold" fontSize="24">
-              O continente mais antigo.
-            </Text>
-          </Flex>
+          <Continent
+            name="Ásia"
+            description="Maior continente em extensão territorial."
+            image="https://img.freepik.com/fotos-gratis/pagode-vermelho-de-chureito-no-japao-com-o-monte-fuji-atras_181624-4668.jpg?w=1380&t=st=1677249326~exp=1677249926~hmac=fe1502b7c02fec7df2484b5ec4d4ba2630f85e9882ce851523e2f6fb22659505"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Flex
-            direction="column"
-            h="100%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Text fontWeight="bold" fontSize="40">
-              Oceania
-            </Text>
-            <Text fontWeight="bold" fontSize="24">
-              O continente mais antigo.
-            </Text>
-          </Flex>
+          <Continent
+            name="Oceania"
+            description="É o segundo maior e mais comprido do mundo."
+            image="https://img.freepik.com/fotos-gratis/bela-foto-da-ponte-do-porto-de-sydney-com-um-ceu-rosa-e-azul-claro_181624-16041.jpg?w=1380&t=st=1677249544~exp=1677250144~hmac=2b8a5ec7aae9ebb0374f4fe1c80f402afc0d65501e7de98b951642705c7e84d8"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Flex
-            direction="column"
-            h="100%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Text fontWeight="bold" fontSize="40">
-              África
-            </Text>
-            <Text fontWeight="bold" fontSize="24">
-              O continente mais antigo.
-            </Text>
-          </Flex>
+          <Continent
+            name="África"
+            description="É o segundo maior e mais comprido do mundo."
+            image="https://img.freepik.com/fotos-gratis/campo-coberto-de-grama-e-arvores-cercado-por-zebras-sob-a-luz-do-sol-durante-o-por-do-sol_181624-18641.jpg?w=1380&t=st=1677250045~exp=1677250645~hmac=9af5526f7345c536d432cadd19486c7bc919a3e244cd2401569d001e027c0491"
+          />
         </SwiperSlide>
       </Swiper>
     </>
