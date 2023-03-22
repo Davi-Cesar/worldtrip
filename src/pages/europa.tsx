@@ -9,9 +9,9 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { City } from "../components/City/City";
-import { Header } from "../components/Header/Header";
-import { Banner } from "../components/Banner/banner";
+import { City } from "../components/City";
+import { Header } from "../components/Header";
+import { Banner } from "../components/Banner";
 
 export default function Europa() {
   return (

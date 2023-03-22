@@ -37,10 +37,18 @@ export default function Continent({
         filter="auto"
         brightness="80%"
       >
-        <Text fontWeight="bold" fontSize="40">
+        <Text
+          fontWeight="bold"
+          m={{ base: "18px", md: "24px", lg: "0px" }}
+          fontSize={{ base: "24px", md: "40px", lg: "56px" }}
+        >
           {name}
         </Text>
-        <Text fontWeight="bold" fontSize="24">
+        <Text
+          fontWeight="bold"
+          m={{ base: "18px", md: "24px", lg: "30px" }}
+          fontSize={{ base: "18px", md: "24px", lg: "30px" }}
+        >
           {description}
         </Text>
       </Box>

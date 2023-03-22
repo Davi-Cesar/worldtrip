@@ -17,7 +17,7 @@ export function Banner({ image, continente }: WallpaperProps) {
         <Box backdropFilter="brightness(70%)" w="100%" h="100%">
           <Flex flex="1" h="100%" alignItems="flex-end">
             <Text color="white" fontWeight="semibold" fontSize={50} ml="400">
-              Europa
+              {continente}
             </Text>
           </Flex>
         </Box>
