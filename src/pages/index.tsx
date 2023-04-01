@@ -44,7 +44,9 @@ export default function Home() {
                 padding="10"
                 display="flex"
                 justifyContent="center"
+                alignItems="left"
                 flexDirection="column"
+                textAlign="justify"
               >
                 <Text fontWeight="medium" color="white" fontSize="36px">
                   5 Continentes, <br />

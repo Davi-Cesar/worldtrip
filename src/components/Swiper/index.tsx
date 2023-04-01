@@ -24,6 +24,7 @@ export default function SwiperComponent() {
             name="Europa"
             description="O continente mais antigo."
             image="./Europa.jfif"
+            link="/europa"
           />
         </SwiperSlide>
         <SwiperSlide>
